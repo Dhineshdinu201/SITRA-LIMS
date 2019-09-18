@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@color/Toolbar_color"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@android:color/white"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:weightSum="3"
+            android:background="@color/Toolbar_color"
+            android:orientation="horizontal">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textAlignment="center"
+            android:layout_weight="2.5"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:text="Test Details"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="Test Name:"
+                android:textColor="@android:color/black" />
+
+            <TextView
+                android:id="@+id/alert_testname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="asfdhbkbsjn" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="Allias:"
+                android:textColor="@android:color/black" />
+
+            <TextView
+                android:id="@+id/alert_allias"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="asfdhbkbsjn" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="Standard:"
+                android:textColor="@android:color/black" />
+
+            <TextView
+                android:id="@+id/alert_standard"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="asfdhbkbsjn" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="Sample size:"
+                android:textColor="@android:color/black" />
+
+            <TextView
+                android:id="@+id/alert_samplesize"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="asfdhbkbsjn" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="Member Rate:"
+                android:textColor="@android:color/black" />
+
+            <TextView
+                android:id="@+id/alert_memrate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="asfdhbkbsjn" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="Non-Member Rate:"
+                android:textColor="@android:color/black" />
+
+            <TextView
+                android:id="@+id/alert_nonmem_rate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="asfdhbkbsjn" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="NABL:"
+                android:textColor="@android:color/black" />
+
+            <TextView
+                android:id="@+id/alert_nabl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="asfdhbkbsjn" />
+
+
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/alert_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/cancel_curve_edge"
+            android:text="close"
+            android:textColor="@android:color/white"
+            android:textStyle="bold" />
+    </LinearLayout>
+</LinearLayout>

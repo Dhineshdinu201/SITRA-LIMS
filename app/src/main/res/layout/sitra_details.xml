@@ -1,0 +1,694 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"><LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:src="@drawable/sitra_round_logo"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="SITRA Contact Details"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"
+        android:text="The South India Textile Research Association[SITRA]"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="3"
+            android:orientation="horizontal">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="10dp"
+        android:textIsSelectable="true"
+        android:layout_weight="2"
+        android:lineSpacingExtra="5dp"
+        android:text="13/37, Avinashi Road, \n Civil Aerodrome Post,\n Coimbatore - 641 014,\n Tamil Nadu, India"/>
+
+            <ImageView
+                android:id="@+id/map_logo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/map_location"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                android:layout_marginLeft="5dp"
+                android:lineSpacingExtra="5dp"
+                android:text="Phone:"
+                />
+            <TextView
+                android:id="@+id/call_sitra"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/BlueDark"
+                android:textIsSelectable="true"
+                android:lineSpacingExtra="5dp"
+                android:text=" 91-422-2574367-9" />
+        </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="20dp"
+        android:text="SITRA - Direct Nos. :"
+        android:textStyle="bold"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                android:layout_marginLeft="5dp"
+                android:lineSpacingExtra="5dp"
+                android:text="Fibre:"
+                />
+            <TextView
+                android:id="@+id/call_fibre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/BlueDark"
+                android:textIsSelectable="true"
+                android:lineSpacingExtra="5dp"
+                android:text=" 0422-4215327" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                android:layout_marginLeft="5dp"
+                android:lineSpacingExtra="5dp"
+                android:text="Yarn:"
+                />
+            <TextView
+                android:id="@+id/call_yarn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/BlueDark"
+                android:textIsSelectable="true"
+                android:lineSpacingExtra="5dp"
+                android:text=" 0422-4215332" />
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                android:layout_marginLeft="5dp"
+                android:lineSpacingExtra="5dp"
+                android:text="Fabric:"
+                />
+            <TextView
+                android:id="@+id/call_fabric"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/BlueDark"
+                android:textIsSelectable="true"
+                android:lineSpacingExtra="5dp"
+                android:text=" 0422-4215314" />
+        </LinearLayout>
+
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                android:layout_marginLeft="5dp"
+                android:lineSpacingExtra="5dp"
+                android:text="S.Room:"
+                />
+            <TextView
+                android:id="@+id/call_sample_room"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/BlueDark"
+                android:textIsSelectable="true"
+                android:lineSpacingExtra="5dp"
+                android:text=" 0422-4215303" />
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                android:layout_marginLeft="5dp"
+                android:lineSpacingExtra="5dp"
+                android:text="Chemistry:"
+                />
+            <TextView
+                android:id="@+id/call_chem"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/BlueDark"
+                android:textIsSelectable="true"
+                android:lineSpacingExtra="5dp"
+                android:text=" 0422-4215328" />
+        </LinearLayout>
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                android:layout_marginLeft="5dp"
+                android:lineSpacingExtra="5dp"
+                android:text="Knitting:"
+                />
+            <TextView
+                android:id="@+id/call_knitting"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/BlueDark"
+                android:textIsSelectable="true"
+                android:lineSpacingExtra="5dp"
+                android:text=" 0422-4215341" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                android:layout_marginLeft="5dp"
+                android:lineSpacingExtra="5dp"
+                android:text="Engineering:"
+                />
+            <TextView
+                android:id="@+id/call_eng"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/BlueDark"
+                android:textIsSelectable="true"
+                android:lineSpacingExtra="5dp"
+                android:text=" 0422-4215344" />
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SITRA-Direct Mail"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                android:layout_marginLeft="5dp"
+                android:lineSpacingExtra="5dp"
+                android:text="Physics:"
+                />
+            <TextView
+                android:id="@+id/mail_phy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/BlueDark"
+                android:lineSpacingExtra="5dp"
+                android:textIsSelectable="true"
+                android:text="physics@sitra.org.in " />
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                android:layout_marginLeft="5dp"
+                android:lineSpacingExtra="5dp"
+                android:text="Chemistry:"
+                />
+            <TextView
+                android:id="@+id/mail_che"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/BlueDark"
+                android:lineSpacingExtra="5dp"
+                android:textIsSelectable="true"
+                android:text=" chem@sitra.org.in" />
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                android:layout_marginLeft="5dp"
+                android:lineSpacingExtra="5dp"
+                android:text="Knitting :"
+                />
+            <TextView
+                android:id="@+id/mail_knitting"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/BlueDark"
+                android:lineSpacingExtra="5dp"
+                android:textIsSelectable="true"
+                android:text="wvg@sitra.org.in" />
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                android:layout_marginLeft="5dp"
+                android:lineSpacingExtra="5dp"
+                android:text="Engineering:"
+                />
+            <TextView
+                android:id="@+id/mail_eng"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/BlueDark"
+                android:lineSpacingExtra="5dp"
+                android:textIsSelectable="true"
+                android:text="engg@sitra.org.in" />
+        </LinearLayout>
+
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="20dp"
+        android:text="CoE - Contact Details :"
+        android:textStyle="bold"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Analytical and Food"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            android:textAlignment="center"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                android:layout_marginLeft="5dp"
+                android:lineSpacingExtra="5dp"
+                android:text="phone:"
+                />
+            <TextView
+                android:id="@+id/call_analytical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/BlueDark"
+                android:lineSpacingExtra="5dp"
+                android:text=" 0422-4215333" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                android:layout_marginLeft="5dp"
+                android:lineSpacingExtra="5dp"
+                android:text="mail:"
+                />
+            <TextView
+                android:id="@+id/mail_analytical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/BlueDark"
+                android:lineSpacingExtra="5dp"
+                android:textIsSelectable="true"
+                android:text="coeanalytical@sitra.org.in" />
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Polymer"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            android:textAlignment="center"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                android:layout_marginLeft="5dp"
+                android:lineSpacingExtra="5dp"
+                android:text="phone:"
+                />
+            <TextView
+                android:id="@+id/call_polymer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/BlueDark"
+                android:lineSpacingExtra="5dp"
+                android:text=" 0422-4215333" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                android:layout_marginLeft="5dp"
+                android:lineSpacingExtra="5dp"
+                android:text="mail:"
+                />
+            <TextView
+                android:id="@+id/mail_polymer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/BlueDark"
+                android:lineSpacingExtra="5dp"
+                android:textIsSelectable="true"
+                android:text=" sitrameditech@sitra.org.in" />
+        </LinearLayout>
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Physics"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:textAlignment="center"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                android:layout_marginLeft="5dp"
+                android:lineSpacingExtra="5dp"
+                android:text="phone:"
+                />
+            <TextView
+                android:id="@+id/call_physics"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/BlueDark"
+                android:textIsSelectable="true"
+                android:lineSpacingExtra="5dp"
+                android:text=" 0422-4215349" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                android:layout_marginLeft="5dp"
+                android:lineSpacingExtra="5dp"
+                android:text="mail:"
+                />
+            <TextView
+                android:id="@+id/mail_coe_physics"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/BlueDark"
+                android:textIsSelectable="true"
+                android:lineSpacingExtra="5dp"
+                android:text=" coephy@sitra.org.in" />
+        </LinearLayout>
+
+
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Microbiology"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:textAlignment="center"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                android:layout_marginLeft="5dp"
+                android:lineSpacingExtra="5dp"
+                android:text="phone:"
+                />
+            <TextView
+                android:id="@+id/call_microbiology"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/BlueDark"
+                android:textIsSelectable="true"
+                android:lineSpacingExtra="5dp"
+                android:text=" 0422-4215323" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                android:layout_marginLeft="5dp"
+                android:lineSpacingExtra="5dp"
+                android:text="mail:"
+                />
+            <TextView
+                android:id="@+id/mail_microbiology"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/BlueDark"
+                android:lineSpacingExtra="5dp"
+                android:textIsSelectable="true"
+                android:text=" coebio@sitra.org.in" />
+        </LinearLayout>
+
+
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Biotechnology"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:textAlignment="center"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                android:layout_marginLeft="5dp"
+                android:lineSpacingExtra="5dp"
+                android:text="phone:"
+                />
+            <TextView
+                android:id="@+id/call_bio_technology"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/BlueDark"
+                android:textIsSelectable="true"
+                android:lineSpacingExtra="5dp"
+                android:text=" 0422-4215333" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                android:layout_marginLeft="5dp"
+                android:lineSpacingExtra="5dp"
+                android:text="mail:"
+                />
+            <TextView
+                android:id="@+id/mail_bio_technology"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/BlueDark"
+                android:textIsSelectable="true"
+                android:lineSpacingExtra="5dp"
+                android:text=" coebio@sitra.org.in" />
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="Trainning and Incubation"
+            android:textColor="@android:color/black"
+            android:textAlignment="center"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                android:layout_marginLeft="5dp"
+                android:lineSpacingExtra="5dp"
+                android:text="phone:"
+                />
+            <TextView
+                android:id="@+id/call_training"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/BlueDark"
+                android:textIsSelectable="true"
+                android:lineSpacingExtra="5dp"
+                android:text=" 0422-4215333" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                android:layout_marginLeft="5dp"
+                android:lineSpacingExtra="5dp"
+                android:text="mail:"
+                />
+            <TextView
+                android:id="@+id/mail_training"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textIsSelectable="true"
+                android:textColor="@color/BlueDark"
+                android:lineSpacingExtra="5dp"
+                android:text=" techtextrg@sitra.org.in" />
+        </LinearLayout>
+
+
+    </LinearLayout></ScrollView>
+
+
+</LinearLayout>

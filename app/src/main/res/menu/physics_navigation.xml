@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/navigation_yarn"
+        android:icon="@drawable/home"
+        android:title="Yarn"/>
+    <item
+        android:id="@+id/navigation_fibre"
+        android:icon="@drawable/home"
+        android:title="Fibre"/>
+    <item
+        android:id="@+id/navigation_fabric"
+        android:icon="@drawable/home"
+        android:title="Fabric"/>
+</menu>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.myapplication">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/application_logo"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Register"
+            android:theme="@style/noaction"></activity>
+        <activity
+            android:name=".ProfileActivity"
+            android:theme="@style/noaction" />
+        <activity android:name=".Rateus" />
+        <activity
+            android:name=".DeviceId"
+            android:theme="@style/noaction" />
+        <activity
+            android:name=".webview"
+            android:theme="@style/noaction" />
+        <activity
+            android:name=".ActivityPaymentMopde"
+            android:theme="@style/noaction" />
+        <activity
+            android:name=".ActivityAddPaymentMode"
+            android:theme="@style/noaction" />
+        <activity
+            android:name=".ActivityMyProfile"
+            android:theme="@style/noaction" />
+        <activity
+            android:name=".ActivityPaymentHistory"
+            android:theme="@style/noaction" />
+        <activity
+            android:name=".Activity_Pending"
+            android:theme="@style/noaction" />
+        <activity
+            android:name=".WebView_pdf"
+            android:theme="@style/noaction" />
+        <activity
+            android:name=".PendingInwards"
+            android:theme="@style/noaction" />
+        <activity
+            android:name=".MemberLoginMenu"
+            android:theme="@style/noaction" />
+        <activity
+            android:name=".TestingFacility"
+            android:theme="@style/noaction" />
+        <activity
+            android:name=".Activity_testing"
+            android:theme="@style/noaction" />
+        <activity
+            android:name=".Activity_view_report"
+            android:theme="@style/noaction"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".home2"
+            android:label="@string/title_activity_home2"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".HomeScreen"
+            android:theme="@style/noaction"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/noaction">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/test_available"
+            android:icon="@drawable/bottom_phy_inactive"
+            android:title="Test Available" />
+        <item
+            android:id="@+id/test_fac"
+            android:icon="@drawable/bottom_chem_inactive"
+            android:title="Testing Facilities" />
+        <item
+            android:id="@+id/view_res"
+            android:icon="@drawable/view"
+            android:title="View Results" />
+        <item
+            android:id="@+id/mem_login"
+            android:icon="@drawable/member_bottom"
+            android:title="Member Login" />
+        <item
+            android:id="@+id/paym"
+            android:icon="@drawable/nav_payment"
+            android:title="Payments" />
+        <item
+            android:id="@+id/contact"
+            android:icon="@drawable/contact_us"
+            android:title="Contact Deatils" />
+
+    </group>
+
+
+</menu>

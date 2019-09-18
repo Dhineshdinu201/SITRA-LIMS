@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="BlueDark">#041780</color>
+    <color name="black">#000000</color>
+    <color name="Bankcolor">#DF4514</color>
+    <color name="mildyellow">#79FCDB69</color>
+    <color name="paleyellow">#79F8EDC6</color>
+    <color name="lite_transparent">#80ffffff</color>
+    <color name="Toolbar_color">#347A4C</color>
+</resources>
+

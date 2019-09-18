@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">SITRA LABORATORIES</string>
+    <string name="title_activity_home2">SITRA</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">SITRA</string>
+    <string name="nav_header_subtitle">sitra.org</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+
+    <!--chemistrylab-->
+
+
+    <string-array name="chemisry">
+        <item>NON-NABL</item>
+        <item>NABL</item>
+        <item>ECO</item>
+        <item>Tirupur Center</item>
+        <item>Water</item>
+    </string-array>
+
+    <string name="flip_1_phy_head">USTER AFIS PRO2</string>
+</resources>

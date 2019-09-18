@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/navigation_nabl"
+        android:icon="@drawable/home"
+        android:title="NABL"/>
+    <item
+        android:id="@+id/navigation_n_nabl"
+        android:icon="@drawable/home"
+        android:title="Non-NABL"/>
+    <item
+        android:id="@+id/navigation_eco"
+        android:icon="@drawable/home"
+        android:title="ECO"/>
+    <item
+        android:id="@+id/navigation_tirupur"
+        android:icon="@drawable/home"
+        android:title="Tirupur Center"/>
+    <item
+        android:id="@+id/navigation_water"
+        android:icon="@drawable/home"
+        android:title="Water"/>
+
+</menu>
