@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -7,157 +7,142 @@
     android:background="@drawable/background_header"
     android:orientation="vertical"
     tools:context=".MainActivity">
-
-
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
     <LinearLayout
-        android:id="@+id/linearLayout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_margin="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="8dp"
-        android:orientation="horizontal"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        android:orientation="vertical">
+    <Spinner
+        android:id="@+id/org_type"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="3dp"
+        android:layout_marginTop="100dp" />
 
-        <android.support.v7.widget.CardView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:minWidth="500dp"
-            android:layout_margin="4dp"
-            app:cardBackgroundColor="@color/Toolbar_color"
-            app:cardCornerRadius="6dp"
-            app:cardElevation="6dp">
+    <EditText
+        android:id="@+id/org"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/rounded_edittext"
+        android:layout_width="match_parent"
+        android:padding="3dp"
+        android:layout_height="wrap_content"
+        android:hint="Mill or Organization Name"
+        android:inputType="text" />
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:background="@android:color/white"
-                android:layout_marginLeft="3dp"
-                android:layout_marginRight="3dp"
-                android:orientation="vertical">
+    <EditText
+        android:id="@+id/add1"
+        android:layout_width="match_parent"
+        android:padding="3dp"
+        android:layout_height="wrap_content"
+        android:hint="Address1"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/rounded_edittext"
+        android:inputType="textPostalAddress"
+        android:maxLength="10" />
 
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:background="@color/Toolbar_color"
-                    android:orientation="vertical">
-                    <de.hdodenhof.circleimageview.CircleImageView
-                        android:id="@+id/profile_image"
-                        android:layout_width="96dp"
-                        android:layout_height="96dp"
-                        android:layout_marginBottom="20dp"
-                        android:layout_marginTop="20dp"
-                        android:layout_gravity="center"
-                        android:src="@drawable/engglogo"
-                        app:civ_border_color="#FF000000" />
+    <EditText
+        android:id="@+id/addr2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Address2"
+        android:padding="3dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/rounded_edittext"
+        android:inputType="textPostalAddress" />
 
+    <EditText
+        android:id="@+id/city"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="City"
+        android:padding="3dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/rounded_edittext"
+        android:inputType="textPassword" />
 
-                </LinearLayout>
+    <EditText
+        android:id="@+id/state"
+        android:layout_width="match_parent"
+        android:padding="3dp"
+        android:layout_height="wrap_content"
+        android:hint="state"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/rounded_edittext"
+        android:inputType="text" />
+    <EditText
+        android:id="@+id/pincode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="pincode"
+        android:padding="3dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/rounded_edittext"
+        android:inputType="number"
+        android:maxLength="6"/>
 
-                <EditText
-                    android:id="@+id/name"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:hint="Name"
-                    android:padding="3dp"
-                    android:layout_marginTop="20dp"
-                    android:background="@drawable/rounded_edittext"
-
-                    android:inputType="text" />
-
-                <EditText
-                    android:id="@+id/org"
-                    android:layout_marginTop="20dp"
-                    android:background="@drawable/rounded_edittext"
-                    android:layout_width="match_parent"
-                    android:padding="3dp"
-                    android:layout_height="wrap_content"
-                    android:hint="Mill or Organization Name"
-                    android:inputType="text" />
-
-                <EditText
-                    android:id="@+id/number"
-                    android:layout_width="match_parent"
-                    android:padding="3dp"
-                    android:layout_height="wrap_content"
-                    android:hint="Mobile Number"
-                    android:layout_marginTop="20dp"
-                    android:background="@drawable/rounded_edittext"
-                    android:inputType="number"
-                    android:maxLength="10" />
-
-                <EditText
-                    android:id="@+id/email"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:hint="Email"
-                    android:padding="3dp"
-                    android:layout_marginTop="20dp"
-                    android:background="@drawable/rounded_edittext"
-                    android:inputType="textEmailAddress" />
-
-                <EditText
-                    android:id="@+id/password"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:hint="Password"
-                    android:padding="3dp"
-                    android:layout_marginTop="20dp"
-                    android:background="@drawable/rounded_edittext"
-                    android:inputType="textPassword" />
-
-                <EditText
-                    android:id="@+id/Country"
-                    android:layout_width="match_parent"
-                    android:padding="3dp"
-                    android:layout_height="wrap_content"
-                    android:hint="Country"
-                    android:layout_marginTop="20dp"
-                    android:background="@drawable/rounded_edittext"
-                    android:inputType="text" />
-
-                <Button
-                    android:id="@+id/register"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:background="@color/Toolbar_color"
-                    android:padding="8dp"
-                    android:text="Register"
-                    android:layout_marginTop="20dp"
-                    android:textColor="@android:color/white"
-                    android:textCursorDrawable="@drawable/color_cursor" />
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email"
+        android:padding="3dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/rounded_edittext"
+        android:inputType="textEmailAddress" />
+    <EditText
+        android:id="@+id/number"
+        android:layout_width="match_parent"
+        android:padding="3dp"
+        android:layout_height="wrap_content"
+        android:hint="Mobile Number"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/rounded_edittext"
+        android:inputType="number"
+        android:maxLength="10" />
+    <EditText
+        android:id="@+id/a_number"
+        android:layout_width="match_parent"
+        android:padding="3dp"
+        android:layout_height="wrap_content"
+        android:hint="Alternative Mobile Number"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/rounded_edittext"
+        android:inputType="number"
+        android:maxLength="10" />
 
 
-            </LinearLayout>
+    <EditText
+        android:id="@+id/Con_per_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Contact Person Name"
+        android:padding="3dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/rounded_edittext"
+        android:inputType="textPassword" />
 
-        </android.support.v7.widget.CardView>
+    <TextView
+        android:id="@+id/deviceid"
+        android:layout_width="match_parent"
+        android:padding="3dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/rounded_edittext"
+        android:inputType="text" />
 
-    </LinearLayout>
-
-
-    <!--<de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"-->
-    <!--android:id="@+id/profile_image"-->
-    <!--android:layout_width="96dp"-->
-    <!--android:layout_height="96dp"-->
-    <!--android:layout_gravity="center"-->
-    <!--android:layout_marginStart="8dp"-->
-    <!--android:layout_marginTop="8dp"-->
-    <!--android:layout_marginEnd="8dp"-->
-    <!--android:layout_marginBottom="8dp"-->
-    <!--android:src="@drawable/logo"-->
-    <!--app:civ_border_color="#FF000000"-->
-    <!--app:civ_border_width="2dp"-->
-    <!--app:layout_constraintBottom_toBottomOf="parent"-->
-    <!--app:layout_constraintEnd_toEndOf="parent"-->
-    <!--app:layout_constraintHorizontal_bias="0.498"-->
-    <!--app:layout_constraintStart_toStartOf="parent"-->
-    <!--app:layout_constraintTop_toTopOf="parent"-->
-    <!--app:layout_constraintVertical_bias="0.058" />-->
-
-</android.support.constraint.ConstraintLayout>
+    <Button
+        android:id="@+id/register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/Toolbar_color"
+        android:padding="8dp"
+        android:text="Register"
+        android:layout_marginTop="20dp"
+        android:textColor="@android:color/white"
+        android:textCursorDrawable="@drawable/color_cursor" />
+</LinearLayout>
+</ScrollView>
+</LinearLayout>
