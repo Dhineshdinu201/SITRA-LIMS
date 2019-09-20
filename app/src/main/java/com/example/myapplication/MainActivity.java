@@ -1,6 +1,8 @@
 package com.example.myapplication;
 
+import android.app.AlertDialog;
 import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.net.wifi.WifiInfo;
 import android.net.wifi.WifiManager;
@@ -85,7 +87,11 @@ public void send(){
                 device_accept_status = object.getString("device_accept_status");
 
                 if(registeration_status_int==1&&device_accept_status_int==1){
-                    Toast.makeText(MainActivity.this, "Waiting for approval", Toast.LENGTH_SHORT).show();
+                    final AlertDialog.Builder builder = new AlertDialog.Builder(MainActivity.this);
+                    builder.setCancelable(false);
+                    builder.setTitle("Confirmation");
+                    builder.setMessage("Waiting for Approval from Sitra...");
+                    builder.create().show();
                 }
                 if(registeration_status_int==0&&device_accept_status_int==0){
                     Intent intent=new Intent(MainActivity.this,Register.class);
