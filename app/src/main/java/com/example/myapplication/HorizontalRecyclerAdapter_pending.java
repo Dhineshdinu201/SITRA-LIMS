@@ -37,7 +37,8 @@ import butterknife.ButterKnife;
 
     public class HorizontalRecyclerAdapter_pending extends
             RecyclerView.Adapter<HorizontalRecyclerAdapter_pending.HorizontalViewHolder> {
-        String GET_URL = " http://lab.sitraonline.org/index.php/api/get_pending_test_details";
+        Constant constant=new Constant();
+        String GET_URL = constant.ip+"get_pending_test_details";
         private Context mContext;
         ArrayList<String>s_no_list=new ArrayList<>();
         ArrayList<String>status_list=new ArrayList<>();

@@ -46,7 +46,8 @@ public class Fragment_engg extends Fragment implements SearchView.OnQueryTextLis
     Spinner searchableSpinner;
     ArrayAdapter adapter, adappter;
     SearchView searchView;
-    String GET_URL = "http://lab.sitraonline.org/index.php/api/getTestDetails";
+    Constant constant=new Constant();
+    String GET_URL = constant.ip+"getTestDetails";
     String labid = "111";
 
     RequestQueue mRequestQueue;

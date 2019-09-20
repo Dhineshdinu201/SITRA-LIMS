@@ -67,8 +67,8 @@ public class ActivityAddPaymentMode extends Activity {
     String ImageTag = "image_tag" ;
 
     String ImageName = "image_data" ;
-
-    String ServerUploadPath ="http://lab.sitraonline.org/index.php/api/upload_payment_documents" ;
+    Constant constant=new Constant();
+    String ServerUploadPath =constant.ip+"upload_payment_documents" ;
 
     ProgressDialog progressDialog ;
 

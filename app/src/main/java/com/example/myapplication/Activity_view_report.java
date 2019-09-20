@@ -54,8 +54,9 @@ public class Activity_view_report extends AppCompatActivity {
     GifImageView loading;
     ArrayList<VerticalModel> mArrayList = new ArrayList<>();
     String custid;
-    private String url_reg = "http://lab.sitraonline.org/index.php/api/validate_device_registration";
-    private String url_mob_track = "http://lab.sitraonline.org/index.php/api/mobile_app_tracking";
+    Constant constant=new Constant();
+    private String url_reg = constant.ip+"validate_device_registration";
+    private String url_mob_track = constant.ip+"mobile_app_tracking";
     String deviceid="";
     String android_id;
     VerticalRecyclerViewAdapter mAdapter;

@@ -36,8 +36,9 @@ public class MainActivity extends AppCompatActivity {
     String custid;
     String registeration_status;
     String device_accept_status;
-    private String url = "http://lab.sitraonline.org/index.php/api/validate_device_registration";
-    private String geturl="http://lab.sitraonline.org/index.php/api/app_sitralims_validate_device_registration";
+    Constant constant=new Constant();
+    private String url = constant.ip+"validate_device_registration";
+    private String geturl=constant.ip+"app_sitralims_validate_device_registration";
     ImageButton splash;
     //Duration for splash screen
     private final int SPLASH_DISPLAY_LENGTH = 3000;

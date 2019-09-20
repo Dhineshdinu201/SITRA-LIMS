@@ -29,7 +29,8 @@ public class
 ActivityPaymentHistory extends AppCompatActivity {
     RecyclerView recy_payment_his;
     String cusid;
-    String GET_URL="http://lab.sitraonline.org/index.php/api/onlinepayment_history";
+    Constant constant=new Constant();
+    String GET_URL=constant.ip+"onlinepayment_history";
     private List<PaymentHistoryModel> paymentHistoryModels;
     @Override
     protected void onCreate(Bundle savedInstanceState) {

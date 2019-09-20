@@ -63,10 +63,11 @@ public class HomeScreen extends AppCompatActivity {
     String type="0";
     String custid;
     Context context=this;
-    private String url_reg = "http://lab.sitraonline.org/index.php/api/validate_device_registration";
-    private String url = "http://lab.sitraonline.org/index.php/api/getInwardDetails";
-    private String url_announcement = "http://lab.sitraonline.org/index.php/api/get_announcement_lists";
-    private String url_mob_track = "http://lab.sitraonline.org/index.php/api/mobile_app_tracking";
+    Constant constant=new Constant();
+    private String url_reg = constant.ip+"validate_device_registration";
+    private String url = constant.ip+"getInwardDetails";
+    private String url_announcement = constant.ip+"get_announcement_lists";
+    private String url_mob_track = constant.ip+"mobile_app_tracking";
     Bundle bundle = new Bundle();
     String deviceid="";
     String android_id;

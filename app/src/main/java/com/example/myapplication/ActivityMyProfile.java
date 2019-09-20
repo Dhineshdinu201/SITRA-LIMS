@@ -28,7 +28,8 @@ public class ActivityMyProfile extends AppCompatActivity {
 String userid,password;
 GifImageView loading;
 TextView name,address_1,address_2,txt_city,txt_state,txt_country,txt_pincode,txt_email,txt_phone,txt_mobile;
-    String GET_URL="http://lab.sitraonline.org/index.php/api/authendicate_member_login";
+Constant constant=new Constant();
+    String GET_URL=constant.ip+"authendicate_member_login";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

@@ -39,7 +39,8 @@ import java.util.List;
 import java.util.Map;
 
 public class Recycler_payment_mode extends RecyclerView.Adapter<Recycler_payment_mode.TestViewHolder> {
-    String GET_URL="http://lab.sitraonline.org/index.php/api/get_pending_document_lists_byid";
+    Constant constant=new Constant();
+    String GET_URL=constant.ip+"get_pending_document_lists_byid";
     List<PaymentModeModel> clubss;
     ArrayAdapter arrayAdapter;
     ArrayList<String>doc_name,doc_path;

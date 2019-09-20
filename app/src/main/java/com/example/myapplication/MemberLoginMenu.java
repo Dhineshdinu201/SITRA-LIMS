@@ -49,10 +49,10 @@ public class MemberLoginMenu extends AppCompatActivity {
 //    advance_pending_message
 //    mobile_advance_pending_lastupdation
 //    advance_pending_visibility
-
-    private String url_reg = "http://lab.sitraonline.org/index.php/api/validate_device_registration";
-    private String url_adv = "http://lab.sitraonline.org/index.php/api/get_customer_pending_advance";
-    private String url_mob_track = "http://lab.sitraonline.org/index.php/api/mobile_app_tracking";
+    Constant constant=new Constant();
+    private String url_reg = constant.ip+"validate_device_registration";
+    private String url_adv = constant.ip+"get_customer_pending_advance";
+    private String url_mob_track = constant.ip+"mobile_app_tracking";
     String deviceid="";
     String android_id;
 

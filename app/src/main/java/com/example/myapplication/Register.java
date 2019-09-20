@@ -40,7 +40,8 @@ public class Register extends AppCompatActivity {
     String deviceid="";
     String android_id;
     String str_org_type;
-    String GET_URL="http://lab.sitraonline.org/index.php/api/app_sitralims_device_registration";
+    Constant constant=new Constant();
+    String GET_URL=constant.ip+"app_sitralims_device_registration";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -66,16 +67,16 @@ public class Register extends AppCompatActivity {
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
                 switch (position){
                     case 0:
-                        str_org_type="NonMember";
+                        str_org_type="1";
                         break;
                     case 1:
-                        str_org_type="Member";
+                        str_org_type="2";
                         break;
                     case 2:
-                        str_org_type="TSC";
+                        str_org_type="3";
                         break;
                     case 3:
-                        str_org_type="Others";
+                        str_org_type="4";
                         break;
 
                 }

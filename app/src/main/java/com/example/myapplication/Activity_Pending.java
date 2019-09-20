@@ -41,7 +41,8 @@ public class Activity_Pending extends AppCompatActivity {
     GifImageView loading;
     ArrayList<String>InwardList,testid_list,test_name_list,samplecount_list,status_list,inwardnolist,inwarddate_list,noofsamples_list,stat_value_list,pending_list;
     ArrayList<ArrayList<String>>test_id_listall,testname_list_all,sample_count_list_all,status_list_all,stat_value_list_all;
-    String url = " http://lab.sitraonline.org/index.php/api/get_customer_pending_inwards";
+    Constant constant=new Constant();
+    String url = constant.ip+"get_customer_pending_inwards";
     RecyclerView recyclerView_status;
     ArrayList<Vertical_model_pending> mArrayList = new ArrayList<>();
     VerticalRecyclerAdapter_pending mAdapter;

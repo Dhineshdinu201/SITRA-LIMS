@@ -40,7 +40,8 @@ import butterknife.ButterKnife;
 
 public class HorizontalRecyclerViewAdapter extends
         RecyclerView.Adapter<HorizontalRecyclerViewAdapter.HorizontalViewHolder> {
-    String GET_URL="http://lab.sitraonline.org/index.php/api/get_inward_test_results";
+    Constant constant=new Constant();
+    String GET_URL=constant.ip+"get_inward_test_results";
     private Context mContext;
 
     private ArrayList<HorizontalModel> mArrayList;

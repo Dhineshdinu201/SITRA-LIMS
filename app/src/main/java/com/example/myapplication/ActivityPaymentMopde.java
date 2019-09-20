@@ -47,7 +47,8 @@ RecyclerView recy_pay_mode;
     private List<PaymentModeModel> testNames;
     String cusid;
     ArrayList<String>idlist,paymodelist,payreflist,paydatelist,payvaluelist,payremarkslist,documentcountlist;
-    String url = "http://lab.sitraonline.org/index.php/api/get_payment_query_lists";
+    Constant constant=new Constant();
+    String url = constant.ip+"get_payment_query_lists";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

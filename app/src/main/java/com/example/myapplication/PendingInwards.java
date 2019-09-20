@@ -43,7 +43,8 @@ import pl.droidsonroids.gif.GifImageView;
 public class PendingInwards extends AppCompatActivity {
     //**************************Declaration*******************************************
     EditText et_search;
-    String GET_URL="http://lab.sitraonline.org/index.php/api/get_memberlogin_inwards";
+    Constant constant=new Constant();
+    String GET_URL=constant.ip+"get_memberlogin_inwards";
     Button btn_search,refresh,fromm,tooo;
     String from_date="";
     GifImageView loading;

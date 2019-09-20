@@ -53,7 +53,8 @@ public class Fragment_physics extends Fragment implements SearchView.OnQueryText
     Spinner searchableSpinner;
     ArrayAdapter adapter, adappter;
     SearchView searchView;
-    String GET_URL = "http://lab.sitraonline.org/index.php/api/getTestDetails";
+    Constant constant=new Constant();
+    String GET_URL = constant.ip+"getTestDetails";
     String labid="1";
     FloatingActionMenu menu;
     FloatingActionButton b2,b3,b4;

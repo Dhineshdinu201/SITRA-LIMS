@@ -51,7 +51,8 @@ Fragment_coe  extends Fragment implements SearchView.OnQueryTextListener {
     FloatingActionButton b1,b2,b3,b4,b5,b6,b7;
     ArrayAdapter adapter, adappter;
     SearchView searchView;
-    String GET_URL = "http://lab.sitraonline.org/index.php/api/getTestDetails";
+    Constant constant=new Constant();
+    String GET_URL = constant.ip+"getTestDetails";
     RequestQueue mRequestQueue;
     StringRequest mStringRequest;
     private List<String> clubs;

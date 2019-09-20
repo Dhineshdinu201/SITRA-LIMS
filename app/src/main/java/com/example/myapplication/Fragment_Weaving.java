@@ -47,8 +47,8 @@ public class Fragment_Weaving extends Fragment implements SearchView.OnQueryText
     TextView labcount;
     Spinner searchableSpinner;
     ArrayAdapter adapter, adappter;
-
-    String GET_URL = "http://lab.sitraonline.org/index.php/api/getTestDetails";
+    Constant constant=new Constant();
+    String GET_URL = constant.ip+"getTestDetails";
 
 
 

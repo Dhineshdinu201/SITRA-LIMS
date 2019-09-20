@@ -46,7 +46,8 @@ import pl.droidsonroids.gif.GifImageView;
 
 public class Fragment_payment extends Fragment implements AdvancedWebView.Listener  {
     //*********************Declaration******************************
-    private String url = "http://lab.sitraonline.org/index.php/api/validate_device_registration";
+    Constant constant=new Constant();
+    private String url = constant.ip+"validate_device_registration";
     private AdvancedWebView mWebView;
     Snackbar snackbar;
     GifImageView loading;
