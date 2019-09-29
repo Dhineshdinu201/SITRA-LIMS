@@ -86,7 +86,12 @@ public void send(){
                 custid = object.getString("custid");
                 registeration_status = object.getString("registration_status");
                 device_accept_status = object.getString("device_accept_status");
-
+                try {
+                    registeration_status_int = Integer.parseInt(registeration_status);
+                    device_accept_status_int = Integer.parseInt(device_accept_status);
+                }catch (NullPointerException e){
+                    e.printStackTrace();
+                }
                 if(registeration_status_int==1&&device_accept_status_int==1){
                     final AlertDialog.Builder builder = new AlertDialog.Builder(MainActivity.this);
                     builder.setCancelable(false);
@@ -94,13 +99,17 @@ public void send(){
                     builder.setMessage("Waiting for Approval from Sitra...");
                     builder.create().show();
                 }
-                if(registeration_status_int==0&&device_accept_status_int==0){
+                else if(registeration_status_int==0&&device_accept_status_int==0){
                     Intent intent=new Intent(MainActivity.this,Register.class);
                     startActivity(intent);
                 }
-                if(registeration_status_int==2&&device_accept_status_int==2){
+                else if(registeration_status_int==2&&device_accept_status_int==2){
                     Intent intent=new Intent(MainActivity.this,HomeScreen.class);
                     intent.putExtra("custid",custid);
+                    startActivity(intent);
+                }
+                else {
+                    Intent intent=new Intent(MainActivity.this,Register.class);
                     startActivity(intent);
                 }
                 //****************parsing common data*************

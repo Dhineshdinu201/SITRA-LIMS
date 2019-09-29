@@ -76,9 +76,7 @@ public class HomeScreen extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home_screen);
-        showRegister();
         sendd();
-
         //**************************initialization*****************************
         img_testing = (ImageView) findViewById(R.id.test_available);
         img_test_fac = (ImageView) findViewById(R.id.img_test_fac);
@@ -296,35 +294,7 @@ public class HomeScreen extends AppCompatActivity {
         //**************************************************************************
 
     }
-    public void showRegister(){
-        Activity activity = null;
-        AlertDialog.Builder dialogBuilder = new AlertDialog.Builder(this);
-        Button close;
 
-        final AlertDialog alertDialog = dialogBuilder.create();
-        LayoutInflater factory = LayoutInflater.from(this);
-        final View vi = factory.inflate(R.layout.alert_register, null);
-
-        Button register=(Button)vi.findViewById(R.id.register);
-        register.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent=new Intent(HomeScreen.this,Register.class);
-                startActivity(intent);
-            }
-        });
-
-
-
-
-
-
-        alertDialog.setView(vi);
-        alertDialog.show();
-        alertDialog.setCancelable(false);
-
-
-    }
 
     @Override
     public void onBackPressed(){

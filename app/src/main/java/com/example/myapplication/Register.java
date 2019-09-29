@@ -124,6 +124,9 @@ public class Register extends AppCompatActivity {
                     JSONObject js=new JSONObject(response);
                     String status=js.getString("status");
                     String err_msg=js.getString("err_msg");
+                    if(status.equals(3)){
+                        Toast.makeText(Register.this, "Device Registered. Please wait for approval", Toast.LENGTH_SHORT).show();
+                    }
                     //************parsing response object**********
                 } catch (JSONException e) {
                     e.printStackTrace();
