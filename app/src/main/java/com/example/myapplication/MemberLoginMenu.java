@@ -61,6 +61,7 @@ public class MemberLoginMenu extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_member_login_menu);
         refresh=(Button)findViewById(R.id.refresh);
+
         pending = (ImageView) findViewById(R.id.pending);
         t_lastupdate=(TextView)findViewById(R.id.lastupdate);
         WifiManager manager = (WifiManager) getApplicationContext().getSystemService(Context.WIFI_SERVICE);
@@ -82,6 +83,9 @@ public class MemberLoginMenu extends AppCompatActivity {
             cus_password = getIntent().getStringExtra("password");
             flag=getIntent().getStringExtra("flag");
             message=getIntent().getStringExtra("message");
+            if(cusid!=null){
+                update(cusid);
+            }
 
         } catch (NullPointerException e) {
             e.printStackTrace();
@@ -129,7 +133,7 @@ public class MemberLoginMenu extends AppCompatActivity {
         refresh.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                update();
+                update(cusid);
             }
         });
 
@@ -310,7 +314,7 @@ public class MemberLoginMenu extends AppCompatActivity {
 
 
     }
-    public void update(){
+    public void update(final String customerId){
         RequestQueue queue = Volley.newRequestQueue(this);
         final StringRequest request = new StringRequest(Request.Method.POST, url_adv, new Response.Listener<String>() {
             @Override
@@ -370,7 +374,7 @@ public class MemberLoginMenu extends AppCompatActivity {
 
             protected Map<String, String> getParams() throws AuthFailureError {
                 Map<String, String> map = new HashMap<String, String>();
-                map.put("custid", custid);
+                map.put("custid", customerId);
 
 
 

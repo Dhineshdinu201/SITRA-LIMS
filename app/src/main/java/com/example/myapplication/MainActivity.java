@@ -36,14 +36,15 @@ public class MainActivity extends AppCompatActivity {
     String custid;
     String registeration_status;
     String device_accept_status;
-    Constant constant=new Constant();
-    private String url = constant.ip+"validate_device_registration";
-    private String geturl=constant.ip+"app_sitralims_validate_device_registration";
+    Constant constant = new Constant();
+    private String url = constant.ip + "validate_device_registration";
+    private String geturl = constant.ip + "app_sitralims_validate_device_registration";
     ImageButton splash;
     //Duration for splash screen
     private final int SPLASH_DISPLAY_LENGTH = 3000;
-    String deviceid="";
+    String deviceid = "";
     String android_id;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -51,100 +52,94 @@ public class MainActivity extends AppCompatActivity {
         send();
         WifiManager manager = (WifiManager) getApplicationContext().getSystemService(Context.WIFI_SERVICE);
         WifiInfo info = manager.getConnectionInfo();
-         android_id = Settings.Secure.getString(getContentResolver(),
+        android_id = Settings.Secure.getString(getContentResolver(),
                 Settings.Secure.ANDROID_ID);
-        Log.i("add",android_id);
+        Log.i("add", android_id);
         // splash=(ImageButton) findViewById(R.id.splash);
         //Splash Screen
-        deviceid=android_id;
+        deviceid = android_id;
 
-        new Handler().postDelayed(new Runnable(){
-            @Override
-            public void run() {
-
-            }
-        }, SPLASH_DISPLAY_LENGTH);
+    }
+    @Override
+    public void onResume(){
+        super.onResume();
+        send();
 
     }
 
-public void send(){
-    RequestQueue queue = Volley.newRequestQueue(this);
-    StringRequest request = new StringRequest(Request.Method.POST, geturl, new Response.Listener<String>() {
-        @Override
-        public void onResponse(String response) {
+    public void send() {
+        RequestQueue queue = Volley.newRequestQueue(this);
+        StringRequest request = new StringRequest(Request.Method.POST, geturl, new Response.Listener<String>() {
+            @Override
+            public void onResponse(String response) {
 
-            Log.i("My success", "" + response);
-
-
-            try {
-                //************parsing response object************
-
-                JSONObject object = new JSONObject(response);
-                Log.i("object",""+object);
-
-
-                custid = object.getString("custid");
-                registeration_status = object.getString("registration_status");
-                device_accept_status = object.getString("device_accept_status");
+                Log.i("My success", "" + response);
                 try {
-                    registeration_status_int = Integer.parseInt(registeration_status);
-                    device_accept_status_int = Integer.parseInt(device_accept_status);
-                }catch (NullPointerException e){
-                    e.printStackTrace();
-                }
-                if(registeration_status_int==1&&device_accept_status_int==1){
-                    final AlertDialog.Builder builder = new AlertDialog.Builder(MainActivity.this);
-                    builder.setCancelable(false);
-                    builder.setTitle("Confirmation");
-                    builder.setMessage("Waiting for Approval from Sitra...");
-                    builder.create().show();
-                }
-                else if(registeration_status_int==0&&device_accept_status_int==0){
-                    Intent intent=new Intent(MainActivity.this,Register.class);
-                    startActivity(intent);
-                }
-                else if(registeration_status_int==2&&device_accept_status_int==2){
-                    Intent intent=new Intent(MainActivity.this,HomeScreen.class);
-                    intent.putExtra("custid",custid);
-                    startActivity(intent);
-                }
-                else {
-                    Intent intent=new Intent(MainActivity.this,Register.class);
-                    startActivity(intent);
-                }
-                //****************parsing common data*************
+                    //************parsing response object************
 
-            } catch (JSONException e) {
-                e.printStackTrace();
-                Toast.makeText(MainActivity.this, "Please complete the registeration process/Contact SITRA", Toast.LENGTH_SHORT).show();
-                //Intent intent=new Intent(MainActivity.this,DeviceId.class);
+                    JSONObject object = new JSONObject(response);
+                    Log.i("object", "" + object);
+
+
+                    custid = object.getString("custid");
+                    registeration_status = object.getString("registration_status");
+                    device_accept_status = object.getString("device_accept_status");
+                    try {
+                        registeration_status_int = Integer.parseInt(registeration_status);
+                        device_accept_status_int = Integer.parseInt(device_accept_status);
+                    } catch (NullPointerException e) {
+                        e.printStackTrace();
+                    }
+                    if (registeration_status_int == 1 && device_accept_status_int == 1) {
+                        final AlertDialog.Builder builder = new AlertDialog.Builder(MainActivity.this);
+                        builder.setCancelable(false);
+                        builder.setTitle("Confirmation");
+                        builder.setMessage("Waiting for Approval from Sitra...");
+                        builder.create().show();
+                    } else if (registeration_status_int == 0 && device_accept_status_int == 0) {
+                        Intent intent = new Intent(MainActivity.this, Register.class);
+                        startActivity(intent);
+                    } else if (registeration_status_int == 2 && device_accept_status_int == 2) {
+                        Intent intent = new Intent(MainActivity.this, HomeScreen.class);
+                        intent.putExtra("custid", custid);
+                        startActivity(intent);
+                    } else {
+                        Intent intent = new Intent(MainActivity.this, Register.class);
+                        startActivity(intent);
+                    }
+                    //****************parsing common data*************
+
+                } catch (JSONException e) {
+                    e.printStackTrace();
+                    Toast.makeText(MainActivity.this, "Please complete the registeration process/Contact SITRA", Toast.LENGTH_SHORT).show();
+                    //Intent intent=new Intent(MainActivity.this,DeviceId.class);
 //               Intent intent=new Intent(MainActivity.this,HomeScreen.class);
 //                startActivity(intent);
+                }
+
+
             }
+        }, new Response.ErrorListener() {
+            @Override
+            public void onErrorResponse(VolleyError error) {
 
+                Toast.makeText(MainActivity.this, "Please check connectivity", Toast.LENGTH_SHORT).show();
+                Log.i("My error", "" + error);
+            }
+        }) {
+            @Override
 
-        }
-    }, new Response.ErrorListener() {
-        @Override
-        public void onErrorResponse(VolleyError error) {
+            protected Map<String, String> getParams() throws AuthFailureError {
+                Map<String, String> map = new HashMap<String, String>();
+                map.put("deviceid", deviceid);
+                Log.i("device id", deviceid);
 
-            Toast.makeText(MainActivity.this, "Please check connectivity", Toast.LENGTH_SHORT).show();
-            Log.i("My error", "" + error);
-        }
-    }) {
-        @Override
-
-        protected Map<String, String> getParams() throws AuthFailureError {
-            Map<String, String> map = new HashMap<String, String>();
-            map.put("deviceid", deviceid);
-            Log.i("device id",deviceid);
-
-            return map;
-        }
-    };
-    queue.add(request);
+                return map;
+            }
+        };
+        queue.add(request);
 //    Intent intent=new Intent(MainActivity.this,HomeScreen.class);
 //                startActivity(intent);
 
-}
+    }
 }
