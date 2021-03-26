@@ -42,7 +42,7 @@ public class Fragment_member_login extends Fragment {
 
 
     //Decalaration
-    String GET_URL="http://lab.sitraonline.org/index.php/api/authendicate_member_login";
+    String GET_URL="http://lab.sitraonline.org.in/index.php/api/authendicate_member_login";
 
     EditText et_userid, et_password;
     CheckBox checkBox;
@@ -52,10 +52,10 @@ public class Fragment_member_login extends Fragment {
     String userid, password;
     String deviceid="";
     String custid;
-    private String url_reg = "http://lab.sitraonline.org/index.php/api/validate_device_registration";
+    private String url_reg = "http://lab.sitraonline.org.in/index.php/api/validate_device_registration";
     String android_id;
 
-    private String url_mob_track = "http://lab.sitraonline.org/index.php/api/mobile_app_tracking";
+    private String url_mob_track = "http://lab.sitraonline.org.in/index.php/api/mobile_app_tracking";
     private RequestQueue mRequestQueue;
     private StringRequest mStringRequest;
 
@@ -122,7 +122,6 @@ public class Fragment_member_login extends Fragment {
                         editor.putString("USERID",userid);
                         editor.putString("PASSWORD",password);
                         editor.apply();
-
                     }
                 }
                 userid = et_userid.getText().toString();

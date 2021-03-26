@@ -127,7 +127,7 @@ public static class TestViewHolder extends RecyclerView.ViewHolder {
                         public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                             Log.i("intent","intent");
                             Intent intent=new Intent(mContext,webview.class);
-                            intent.putExtra("c","http://lab.sitraonline.org/mobile_images/"+doc_path.get(position));
+                            intent.putExtra("c","http://lab.sitraonline.org.in/mobile_images/"+doc_path.get(position));
                             mContext.startActivity(intent);
 
 

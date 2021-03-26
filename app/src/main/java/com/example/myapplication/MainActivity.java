@@ -4,6 +4,8 @@ import android.app.AlertDialog;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.net.ConnectivityManager;
+import android.net.NetworkInfo;
 import android.net.wifi.WifiInfo;
 import android.net.wifi.WifiManager;
 import android.os.Handler;
@@ -49,7 +51,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        send();
+
         WifiManager manager = (WifiManager) getApplicationContext().getSystemService(Context.WIFI_SERVICE);
         WifiInfo info = manager.getConnectionInfo();
         android_id = Settings.Secure.getString(getContentResolver(),
@@ -58,14 +60,24 @@ public class MainActivity extends AppCompatActivity {
         // splash=(ImageButton) findViewById(R.id.splash);
         //Splash Screen
         deviceid = android_id;
+//        if(internetConnected()) {
 
+            send();
+//        }
     }
-    @Override
-    public void onResume(){
-        super.onResume();
-        send();
 
-    }
+//    public boolean internetConnected() {
+//        boolean connected = false;
+//        ConnectivityManager connectivityManager = (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
+//        if (connectivityManager.getNetworkInfo(ConnectivityManager.TYPE_MOBILE).getState() == NetworkInfo.State.CONNECTED ||
+//                connectivityManager.getNetworkInfo(ConnectivityManager.TYPE_WIFI).getState() == NetworkInfo.State.CONNECTED) {
+//            //we are connected to a network
+//            connected = true;
+//        } else {
+//            connected = false;
+//        }
+//        return connected;
+//    }
 
     public void send() {
         RequestQueue queue = Volley.newRequestQueue(this);
@@ -122,13 +134,11 @@ public class MainActivity extends AppCompatActivity {
         }, new Response.ErrorListener() {
             @Override
             public void onErrorResponse(VolleyError error) {
-
                 Toast.makeText(MainActivity.this, "Please check connectivity", Toast.LENGTH_SHORT).show();
                 Log.i("My error", "" + error);
             }
         }) {
             @Override
-
             protected Map<String, String> getParams() throws AuthFailureError {
                 Map<String, String> map = new HashMap<String, String>();
                 map.put("deviceid", deviceid);

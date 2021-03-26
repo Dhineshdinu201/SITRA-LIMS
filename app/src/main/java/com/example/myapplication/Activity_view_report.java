@@ -99,7 +99,7 @@ public class Activity_view_report extends AppCompatActivity {
         sendd();
         //initialization
 
-        url = "http://lab.sitraonline.org/index.php/api/getInwardDetails";
+        url = "http://lab.sitraonline.org.in/index.php/api/getInwardDetails";
         inward_no = (TextView) findViewById(R.id.inward_no);
         status = (TextView) findViewById(R.id.status);
         //seemore=(Button)findViewById(R.id.seemore);

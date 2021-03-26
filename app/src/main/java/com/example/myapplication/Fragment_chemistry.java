@@ -59,7 +59,7 @@ public class Fragment_chemistry extends Fragment implements SearchView.OnQueryTe
     FloatingActionMenu menu;
     FloatingActionButton b2,b3,b4,b5,b6;
 
-    String GET_URL = "http://lab.sitraonline.org/index.php/api/getTestDetails";
+    String GET_URL = "http://lab.sitraonline.org.in/index.php/api/getTestDetails";
 
 
     RequestQueue mRequestQueue;

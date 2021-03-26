@@ -199,7 +199,7 @@ public class HorizontalRecyclerViewAdapter extends
                 Log.i("url","pf"+current.getPdf1());
 
                 String url=current.getPdf1().get(current.getPosition()).get(position);
-                String pdf = "http://lab.sitraonline.org/"+url;
+                String pdf = "http://lab.sitraonline.org.in/"+url;
                 Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(pdf));
                 mContext.startActivity(browserIntent);
 
@@ -212,7 +212,7 @@ public class HorizontalRecyclerViewAdapter extends
 
 
                 String url=current.getPdf2().get(current.getPosition()).get(position);
-                String pdf = "http://lab.sitraonline.org/"+url;
+                String pdf = "http://lab.sitraonline.org.in/"+url;
                 Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(pdf));
                 mContext.startActivity(browserIntent);
 

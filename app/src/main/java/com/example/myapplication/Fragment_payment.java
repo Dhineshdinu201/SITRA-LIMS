@@ -63,7 +63,7 @@ public class Fragment_payment extends Fragment implements AdvancedWebView.Listen
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstancetate) {
         View view = inflater.inflate(R.layout.fragment_payment, container, false);
 //        mWebView = (AdvancedWebView) view.findViewById(R.id.webview_payment);
-//        mWebView.loadUrl("http://lab.sitraonline.org/index.php/payment/techprocess");
+//        mWebView.loadUrl("http://lab.sitraonline.org.in/index.php/payment/techprocess");
 //        WebSettings webSettings = mWebView.getSettings();
 //        webSettings.setJavaScriptEnabled(true);
         loading=(GifImageView)view.findViewById(R.id.gif_loading);
@@ -179,7 +179,7 @@ public class Fragment_payment extends Fragment implements AdvancedWebView.Listen
                     loading.setVisibility(View.INVISIBLE);
 
 
-                    mWebView.loadUrl("http://lab.sitraonline.org/index.php/payment/techprocess/"+custid);
+                    mWebView.loadUrl("http://lab.sitraonline.org.in/index.php/payment/techprocess/"+custid);
                     Log.i("custid",""+custid);
 
 
